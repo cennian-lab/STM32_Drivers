@@ -47,6 +47,7 @@ void UART_3_Config(void)
 	//Disable Hardware Flow Control
 	USART3->CR3 &= ~(USART_CR3_CTSE_Msk | USART_CR3_RTSE_Msk);
 	//Set baudrate to 115200
+	USART3->BRR = 0;
 	USART3->BRR = (0x13<<4 | 0x5<<0);
 	//Clear and Enable Flags
 	//Enable UART
