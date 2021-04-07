@@ -207,6 +207,113 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x3d Peripherals/Src/rcc.o
  .debug_macro   0x0000000000000000       0x16 Peripherals/Src/rcc.o
  .debug_macro   0x0000000000000000      0x145 Peripherals/Src/rcc.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .group         0x0000000000000000        0xc Peripherals/Src/uart.o
+ .text          0x0000000000000000        0x0 Peripherals/Src/uart.o
+ .data          0x0000000000000000        0x0 Peripherals/Src/uart.o
+ .bss           0x0000000000000000        0x0 Peripherals/Src/uart.o
+ .text.UART_3_GPIO_Config
+                0x0000000000000000       0x6c Peripherals/Src/uart.o
+ .text.UART_3_Config
+                0x0000000000000000       0x78 Peripherals/Src/uart.o
+ .debug_info    0x0000000000000000      0xbf7 Peripherals/Src/uart.o
+ .debug_abbrev  0x0000000000000000      0x1aa Peripherals/Src/uart.o
+ .debug_aranges
+                0x0000000000000000       0x28 Peripherals/Src/uart.o
+ .debug_ranges  0x0000000000000000       0x18 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000      0x24b Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000      0xa96 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x2e Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x22 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x22 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x8e Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x51 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000      0x103 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x6a Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000      0x1df Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x1c Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x22 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0xc3 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000      0xd23 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000     0xfd8c Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x43 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x22 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x52 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x18 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x3c Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x34 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x16 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x97 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000      0x333 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0xfd Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x10 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x16 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x43 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x34 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x10 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x58 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x71 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x1c Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000      0x12a Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x10 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x1c Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x52 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x22 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x10 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x40 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0xd5 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x1c Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x3d Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000       0x16 Peripherals/Src/uart.o
+ .debug_macro   0x0000000000000000      0x145 Peripherals/Src/uart.o
+ .debug_line    0x0000000000000000      0x70d Peripherals/Src/uart.o
+ .debug_str     0x0000000000000000    0x64001 Peripherals/Src/uart.o
+ .comment       0x0000000000000000       0x54 Peripherals/Src/uart.o
+ .debug_frame   0x0000000000000000       0x50 Peripherals/Src/uart.o
+ .ARM.attributes
+                0x0000000000000000       0x2d Peripherals/Src/uart.o
  .text          0x0000000000000000       0x14 Startup/startup_stm32f103xe.o
  .data          0x0000000000000000        0x0 Startup/startup_stm32f103xe.o
  .bss           0x0000000000000000        0x0 Startup/startup_stm32f103xe.o
@@ -270,6 +377,7 @@ LOAD c:/st/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
 LOAD Core/Src/main.o
 LOAD Core/Src/system_stm32f1xx.o
 LOAD Peripherals/Src/rcc.o
+LOAD Peripherals/Src/uart.o
 LOAD Startup/startup_stm32f103xe.o
 START GROUP
 LOAD c:/st/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a
@@ -574,70 +682,70 @@ LOAD c:/st/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_ranges  0x0000000000000028       0x48 Peripherals/Src/rcc.o
  .debug_ranges  0x0000000000000070       0x20 Startup/startup_stm32f103xe.o
 
-.debug_macro    0x0000000000000000    0x12c82
- .debug_macro   0x0000000000000000      0x243 Core/Src/main.o
- .debug_macro   0x0000000000000243      0xa96 Core/Src/main.o
- .debug_macro   0x0000000000000cd9       0x2e Core/Src/main.o
- .debug_macro   0x0000000000000d07       0x22 Core/Src/main.o
- .debug_macro   0x0000000000000d29       0x22 Core/Src/main.o
- .debug_macro   0x0000000000000d4b       0x8e Core/Src/main.o
- .debug_macro   0x0000000000000dd9       0x51 Core/Src/main.o
- .debug_macro   0x0000000000000e2a      0x103 Core/Src/main.o
- .debug_macro   0x0000000000000f2d       0x6a Core/Src/main.o
- .debug_macro   0x0000000000000f97      0x1df Core/Src/main.o
- .debug_macro   0x0000000000001176       0x1c Core/Src/main.o
- .debug_macro   0x0000000000001192       0x22 Core/Src/main.o
- .debug_macro   0x00000000000011b4       0xc3 Core/Src/main.o
- .debug_macro   0x0000000000001277      0xd23 Core/Src/main.o
- .debug_macro   0x0000000000001f9a     0xfd8c Core/Src/main.o
- .debug_macro   0x0000000000011d26       0x43 Core/Src/main.o
- .debug_macro   0x0000000000011d69       0x22 Core/Src/main.o
- .debug_macro   0x0000000000011d8b       0x52 Core/Src/main.o
- .debug_macro   0x0000000000011ddd       0x18 Core/Src/main.o
- .debug_macro   0x0000000000011df5       0x3c Core/Src/main.o
- .debug_macro   0x0000000000011e31       0x34 Core/Src/main.o
- .debug_macro   0x0000000000011e65       0x16 Core/Src/main.o
- .debug_macro   0x0000000000011e7b       0x97 Core/Src/main.o
- .debug_macro   0x0000000000011f12      0x333 Core/Src/main.o
- .debug_macro   0x0000000000012245       0xfd Core/Src/main.o
- .debug_macro   0x0000000000012342       0x10 Core/Src/main.o
- .debug_macro   0x0000000000012352       0x16 Core/Src/main.o
- .debug_macro   0x0000000000012368       0x43 Core/Src/main.o
- .debug_macro   0x00000000000123ab       0x34 Core/Src/main.o
- .debug_macro   0x00000000000123df       0x10 Core/Src/main.o
- .debug_macro   0x00000000000123ef       0x58 Core/Src/main.o
- .debug_macro   0x0000000000012447       0x71 Core/Src/main.o
- .debug_macro   0x00000000000124b8       0x1c Core/Src/main.o
- .debug_macro   0x00000000000124d4      0x12a Core/Src/main.o
- .debug_macro   0x00000000000125fe       0x10 Core/Src/main.o
- .debug_macro   0x000000000001260e       0x1c Core/Src/main.o
- .debug_macro   0x000000000001262a       0x52 Core/Src/main.o
- .debug_macro   0x000000000001267c       0x22 Core/Src/main.o
- .debug_macro   0x000000000001269e       0x10 Core/Src/main.o
- .debug_macro   0x00000000000126ae       0x40 Core/Src/main.o
- .debug_macro   0x00000000000126ee       0xd5 Core/Src/main.o
- .debug_macro   0x00000000000127c3       0x1c Core/Src/main.o
- .debug_macro   0x00000000000127df       0x3d Core/Src/main.o
- .debug_macro   0x000000000001281c       0x16 Core/Src/main.o
- .debug_macro   0x0000000000012832      0x145 Core/Src/main.o
- .debug_macro   0x0000000000012977       0xce Core/Src/system_stm32f1xx.o
- .debug_macro   0x0000000000012a45      0x23d Peripherals/Src/rcc.o
+.debug_macro    0x0000000000000000    0x12c8a
+ .debug_macro   0x0000000000000000      0x247 Core/Src/main.o
+ .debug_macro   0x0000000000000247      0xa96 Core/Src/main.o
+ .debug_macro   0x0000000000000cdd       0x2e Core/Src/main.o
+ .debug_macro   0x0000000000000d0b       0x22 Core/Src/main.o
+ .debug_macro   0x0000000000000d2d       0x22 Core/Src/main.o
+ .debug_macro   0x0000000000000d4f       0x8e Core/Src/main.o
+ .debug_macro   0x0000000000000ddd       0x51 Core/Src/main.o
+ .debug_macro   0x0000000000000e2e      0x103 Core/Src/main.o
+ .debug_macro   0x0000000000000f31       0x6a Core/Src/main.o
+ .debug_macro   0x0000000000000f9b      0x1df Core/Src/main.o
+ .debug_macro   0x000000000000117a       0x1c Core/Src/main.o
+ .debug_macro   0x0000000000001196       0x22 Core/Src/main.o
+ .debug_macro   0x00000000000011b8       0xc3 Core/Src/main.o
+ .debug_macro   0x000000000000127b      0xd23 Core/Src/main.o
+ .debug_macro   0x0000000000001f9e     0xfd8c Core/Src/main.o
+ .debug_macro   0x0000000000011d2a       0x43 Core/Src/main.o
+ .debug_macro   0x0000000000011d6d       0x22 Core/Src/main.o
+ .debug_macro   0x0000000000011d8f       0x52 Core/Src/main.o
+ .debug_macro   0x0000000000011de1       0x18 Core/Src/main.o
+ .debug_macro   0x0000000000011df9       0x3c Core/Src/main.o
+ .debug_macro   0x0000000000011e35       0x34 Core/Src/main.o
+ .debug_macro   0x0000000000011e69       0x16 Core/Src/main.o
+ .debug_macro   0x0000000000011e7f       0x97 Core/Src/main.o
+ .debug_macro   0x0000000000011f16      0x333 Core/Src/main.o
+ .debug_macro   0x0000000000012249       0xfd Core/Src/main.o
+ .debug_macro   0x0000000000012346       0x10 Core/Src/main.o
+ .debug_macro   0x0000000000012356       0x16 Core/Src/main.o
+ .debug_macro   0x000000000001236c       0x43 Core/Src/main.o
+ .debug_macro   0x00000000000123af       0x34 Core/Src/main.o
+ .debug_macro   0x00000000000123e3       0x10 Core/Src/main.o
+ .debug_macro   0x00000000000123f3       0x58 Core/Src/main.o
+ .debug_macro   0x000000000001244b       0x71 Core/Src/main.o
+ .debug_macro   0x00000000000124bc       0x1c Core/Src/main.o
+ .debug_macro   0x00000000000124d8      0x12a Core/Src/main.o
+ .debug_macro   0x0000000000012602       0x10 Core/Src/main.o
+ .debug_macro   0x0000000000012612       0x1c Core/Src/main.o
+ .debug_macro   0x000000000001262e       0x52 Core/Src/main.o
+ .debug_macro   0x0000000000012680       0x22 Core/Src/main.o
+ .debug_macro   0x00000000000126a2       0x10 Core/Src/main.o
+ .debug_macro   0x00000000000126b2       0x40 Core/Src/main.o
+ .debug_macro   0x00000000000126f2       0xd5 Core/Src/main.o
+ .debug_macro   0x00000000000127c7       0x1c Core/Src/main.o
+ .debug_macro   0x00000000000127e3       0x3d Core/Src/main.o
+ .debug_macro   0x0000000000012820       0x16 Core/Src/main.o
+ .debug_macro   0x0000000000012836      0x145 Core/Src/main.o
+ .debug_macro   0x000000000001297b       0xce Core/Src/system_stm32f1xx.o
+ .debug_macro   0x0000000000012a49      0x241 Peripherals/Src/rcc.o
 
-.debug_line     0x0000000000000000     0x153c
- .debug_line    0x0000000000000000      0x6f6 Core/Src/main.o
- .debug_line    0x00000000000006f6      0x54a Core/Src/system_stm32f1xx.o
- .debug_line    0x0000000000000c40      0x87f Peripherals/Src/rcc.o
- .debug_line    0x00000000000014bf       0x7d Startup/startup_stm32f103xe.o
+.debug_line     0x0000000000000000     0x14cc
+ .debug_line    0x0000000000000000      0x6cc Core/Src/main.o
+ .debug_line    0x00000000000006cc      0x52e Core/Src/system_stm32f1xx.o
+ .debug_line    0x0000000000000bfa      0x855 Peripherals/Src/rcc.o
+ .debug_line    0x000000000000144f       0x7d Startup/startup_stm32f103xe.o
 
-.debug_str      0x0000000000000000    0x64115
- .debug_str     0x0000000000000000    0x63b78 Core/Src/main.o
-                                      0x63f60 (size before relaxing)
- .debug_str     0x0000000000063b78      0x137 Core/Src/system_stm32f1xx.o
-                                      0x5fc08 (size before relaxing)
- .debug_str     0x0000000000063caf      0x437 Peripherals/Src/rcc.o
-                                      0x644fd (size before relaxing)
- .debug_str     0x00000000000640e6       0x2f Startup/startup_stm32f103xe.o
-                                         0x73 (size before relaxing)
+.debug_str      0x0000000000000000    0x64107
+ .debug_str     0x0000000000000000    0x63b6a Core/Src/main.o
+                                      0x63f52 (size before relaxing)
+ .debug_str     0x0000000000063b6a      0x137 Core/Src/system_stm32f1xx.o
+                                      0x5fbfa (size before relaxing)
+ .debug_str     0x0000000000063ca1      0x437 Peripherals/Src/rcc.o
+                                      0x644ef (size before relaxing)
+ .debug_str     0x00000000000640d8       0x2f Startup/startup_stm32f103xe.o
+                                         0x65 (size before relaxing)
 
 .comment        0x0000000000000000       0x53
  .comment       0x0000000000000000       0x53 Core/Src/main.o
