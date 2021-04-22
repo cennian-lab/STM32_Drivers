@@ -50,6 +50,45 @@ void UART_3_Config(void)
 	USART3->BRR = 0;
 	USART3->BRR = (0x13<<4 | 0x5<<0);
 	//Clear and Enable Flags
+	USART3->CR2 &= ~(USART_CR2_LINEN_Msk | USART_CR2_CLKEN_Msk);
+	USART3->CR3 &= ~(USART_CR3_SCEN_Msk
+			| USART_CR3_IREN_Msk | USART_CR3_HDSEL_Msk);
 	//Enable UART
 	USART3->CR1 |= USART_CR1_UE_Msk;
 }
+
+/*
+ * Transmit function for USART 3
+ */
+bool UART_3_Transmit(uint32_t* data, uint8_t len, uint32_t timeout)
+{
+	uint8_t dataIndex = 0;
+	uint32_t startTick = RCC_Get_msTicks();
+
+	while(dataIndex > len)
+	{
+		//If the transmission buffer is empty
+		if(USART3->SR & USART_SR_TXE)
+		{
+			//Transmit data
+			USART3->DR = data[dataIndex];
+			dataIndex++;
+		}
+		else if ((RCC_Get_msTicks() - startTick) >= timeout )
+			return false;
+
+	}
+	//While the transmission is not complete
+	while(USART3->SR = USART_SR_TC)
+	{
+		if((RCC_Get_msTicks() - startTick) >= timeout )
+			return false;
+	}
+	return true;
+}
+
+
+
+
+
+
