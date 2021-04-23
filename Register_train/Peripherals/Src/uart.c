@@ -8,59 +8,62 @@
 #include "uart.h"
 #include "main.h"
 /*
- * Configuring USART 3 related GPIOs
+ * Configuring USART 1 related GPIOs
  */
-void UART_3_GPIO_Config(void)
+void UART_1_GPIO_Config(void)
 {
-	//Tx PB10, Rx PB11
+	//Tx PA9, Rx PA10
 	//Enable Port A and it's clock
-	RCC->APB2ENR |= RCC_APB2ENR_IOPBEN;
+	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
 	//Set AF Mode for Tx
-	GPIOB->CRH &= ~(GPIO_CRH_MODE10_Msk | GPIO_CRH_CNF10_Msk); //clear PB10
-	//Set Tx as output max 10MHz
-	GPIOB->CRH |= GPIO_CRH_MODE10_Msk | GPIO_CRH_CNF10_0;
+	GPIOA->CRH &= ~(GPIO_CRH_MODE9_Msk | GPIO_CRH_CNF9_Msk); //clear PA9
+	//Set Tx as output max 50MHz
+	GPIOA->CRH |= GPIO_CRH_MODE9_Msk | GPIO_CRH_CNF9_1;		//If using APB1 peripheral use 10 MHz
 	//Rx as Floating Input
-	GPIOB->CRH &= ~(GPIO_CRH_MODE11_Msk | GPIO_CRH_CNF11_Msk); //clear PB11
-	GPIOB->CRH |= GPIO_CRH_CNF11_0; //MODE is already 0
+	GPIOA->CRH &= ~(GPIO_CRH_MODE10_Msk | GPIO_CRH_CNF10_Msk); //clear PA10
+	GPIOA->CRH |= GPIO_CRH_CNF10_0; //MODE is already 0
 	//PB10, PB11 Mapping to UART
-	AFIO->MAPR &= ~AFIO_MAPR_USART3_REMAP_Msk;
+	AFIO->MAPR &= ~AFIO_MAPR_USART1_REMAP_Msk;
 	//Enable Alternate Function
 	RCC->APB2ENR |= RCC_APB2ENR_AFIOEN;
 }
 
 /*
- * Configurations for USART 3
+ * Configurations for USART 1
  */
-void UART_3_Config(void)
+void UART_1_Config(void)
 {
-	//Enable UART3 Clock
-	RCC->APB1ENR |= RCC_APB1ENR_USART3EN;
+	//to setup a variable for uartDiv
+	uint32_t uartDiv = SysClockFreq / 9600;
+
+	//Enable UART1 Clock
+	RCC->APB2ENR |= RCC_APB2ENR_USART1EN;
 	//Enable Transmit
-	USART3->CR1 |= USART_CR1_TE;
+	USART1->CR1 |= USART_CR1_TE;
 	//No Parity
 	//Parity Control Disabled
-	USART3->CR1 |= USART_CR1_PCE_Msk;
+	USART1->CR1 |= USART_CR1_PCE_Msk;
 	//Word length 8 bits
-	USART3->CR1 &= ~USART_CR1_M_Msk;
+	USART1->CR1 &= ~USART_CR1_M_Msk;
 	//Stop bits 1
-	USART3->CR2 &= ~USART_CR2_STOP_Msk;
+	USART1->CR2 &= ~USART_CR2_STOP_Msk;
 	//Disable Hardware Flow Control
-	USART3->CR3 &= ~(USART_CR3_CTSE_Msk | USART_CR3_RTSE_Msk);
+	USART1->CR3 &= ~(USART_CR3_CTSE_Msk | USART_CR3_RTSE_Msk);
 	//Set baudrate to 115200
-	USART3->BRR = 0;
-	USART3->BRR = (0x13<<4 | 0x5<<0);
+	USART1->BRR = (((uartDiv / 16) << USART_BRR_DIV_Mantissa_Pos)
+					|(uartDiv % 16) << USART_BRR_DIV_Fraction_Pos);
 	//Clear and Enable Flags
-	USART3->CR2 &= ~(USART_CR2_LINEN_Msk | USART_CR2_CLKEN_Msk);
-	USART3->CR3 &= ~(USART_CR3_SCEN_Msk
+	USART1->CR2 &= ~(USART_CR2_LINEN_Msk | USART_CR2_CLKEN_Msk);
+	USART1->CR3 &= ~(USART_CR3_SCEN_Msk
 			| USART_CR3_IREN_Msk | USART_CR3_HDSEL_Msk);
 	//Enable UART
-	USART3->CR1 |= USART_CR1_UE_Msk;
+	USART1->CR1 |= USART_CR1_UE;
 }
 
 /*
- * Transmit function for USART 3
+ * Transmit function for USART 1
  */
-bool UART_3_Transmit(uint32_t* data, uint8_t len, uint32_t timeout)
+bool UART_1_Transmit(uint32_t* data, uint8_t len, uint32_t timeout)
 {
 	uint8_t dataIndex = 0;
 	uint32_t startTick = RCC_Get_msTicks();
@@ -68,10 +71,10 @@ bool UART_3_Transmit(uint32_t* data, uint8_t len, uint32_t timeout)
 	while(dataIndex > len)
 	{
 		//If the transmission buffer is empty
-		if(USART3->SR & USART_SR_TXE)
+		if(USART1->SR & USART_SR_TXE)
 		{
 			//Transmit data
-			USART3->DR = data[dataIndex];
+			USART1->DR = data[dataIndex];
 			dataIndex++;
 		}
 		else if ((RCC_Get_msTicks() - startTick) >= timeout )
@@ -79,7 +82,7 @@ bool UART_3_Transmit(uint32_t* data, uint8_t len, uint32_t timeout)
 
 	}
 	//While the transmission is not complete
-	while(USART3->SR = USART_SR_TC)
+	while( (USART1->SR = USART_SR_TC) )
 	{
 		if((RCC_Get_msTicks() - startTick) >= timeout )
 			return false;
